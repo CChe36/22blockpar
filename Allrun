@@ -1,0 +1,34 @@
+#!/bin/bash 
+
+#SBATCH --nodes=8
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=60:00:00
+#SBATCH --mem=16GB
+#SBATCH --job-name=22blockpar
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=chc675@nyu.edu
+
+module purge
+
+module load openmpi/intel/4.1.1
+
+rm -rf /scratch/chc675/22blockpar/processor*
+rm -rf blockMesh.log
+rm -rf checkMesh.log
+rm -rf decomposePar.log
+rm -rf rhoCentralFoam.log
+
+wrapper=/scratch/work/public/singularity/run-opencfd-openfoam-2306.bash
+
+${wrapper} blockMesh || exit 1 
+${wrapper} checkMesh || exit 1
+${wrapper} rhoCentralFoam || exit 1
+
+
+
+
+
+
+
+

@@ -1,0 +1,314 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Mar 15 2024
+Time   : 19:12:32
+Host   : cm017.hpc.nyu.edu
+PID    : 3283359
+I/O    : uncollated
+Case   : /scratch/chc675/22blockpar
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+
+Creating topology patches - from boundary section
+
+Creating block mesh topology - scaling/transform applied later
+--> FOAM Warning : 
+    From Foam::polyMesh::polyMesh(const Foam::IOobject&, Foam::pointField&&, const cellShapeList&, const faceListList&, const wordList&, const Foam::PtrList<Foam::dictionary>&, const Foam::word&, const Foam::word&, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 919
+    Found 20 undefined faces in mesh; adding to default patch defaultFaces
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 11
+		Number of boundary faces : 38
+		Number of defined boundary faces : 38
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+Deleting polyMesh directory "constant/polyMesh"
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale (0.001 0.001 0.001)
+    Block 0 cell size :
+        i : 0.002 .. 0.002
+        j : 0.000137737 .. 0.000137737
+        k : 0.001 .. 0.001
+
+    Block 1 cell size :
+        i : 0.000504419 .. 0.000504419
+        j : 0.000137737 .. 0.000137737
+        k : 0.001 .. 0.001
+
+    Block 2 cell size :
+        i : 0.000311643 .. 0.000311643
+        j : 0.000133157 .. 0.000133157
+        k : 0.001 .. 0.001
+
+    Block 3 cell size :
+        i : 0.000271688 .. 0.000271688
+        j : 0.000129252 .. 0.000129252
+        k : 0.001 .. 0.001
+
+    Block 4 cell size :
+        i : 0.000233333 .. 0.000233333
+        j : 9.40591e-05 .. 9.40591e-05
+        k : 0.001 .. 0.001
+
+    Block 5 cell size :
+        i : 0.002 .. 0.002
+        j : 0.000515641 .. 0.000778163
+        k : 0.001 .. 0.001
+
+    Block 6 cell size :
+        i : 0.000502494 .. 0.000502494
+        j : 0.000515641 .. 0.000778163
+        k : 0.001 .. 0.001
+
+    Block 7 cell size :
+        i : 0.00044169 .. 0.00044169
+        j : 0.000498453 .. 0.000752224
+        k : 0.001 .. 0.001
+
+    Block 8 cell size :
+        i : 0.000450694 .. 0.000450694
+        j : 0.000476337 .. 0.000718849
+        k : 0.001 .. 0.001
+
+    Block 9 cell size :
+        i : 0.0014 .. 0.0014
+        j : 0.000407585 .. 0.000615094
+        k : 0.001 .. 0.001
+
+No patch pairs to merge
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.015 0 0) (0.09 0.06 0.001)
+  nPoints: 40852
+  nCells: 20000
+  nFaces: 80425
+  nInternalFaces: 39575
+----------------
+Patches
+----------------
+  patch 0 (start: 39575 size: 90) name: inlet1
+  patch 1 (start: 39665 size: 90) name: outlet1
+  patch 2 (start: 39755 size: 15) name: bottom
+  patch 3 (start: 39770 size: 150) name: top
+  patch 4 (start: 39920 size: 505) name: wall1
+  patch 5 (start: 40425 size: 40000) name: defaultFaces
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : checkMesh
+Date   : Mar 15 2024
+Time   : 19:12:33
+Host   : cm017.hpc.nyu.edu
+PID    : 3283646
+I/O    : uncollated
+Case   : /scratch/chc675/22blockpar
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Check mesh...
+
+Time = 0
+
+Mesh stats 
+    points:           40852
+    internal points:  0
+    faces:            80425
+    internal faces:   39575
+    cells:            20000
+    faces per cell:   6
+    boundary patches: 6
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     20000
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points     Surface topology
+    inlet1              90       182      ok (non-closed singly connected)  
+    outlet1             90       184      ok (non-closed singly connected)  
+    bottom              15       32       ok (non-closed singly connected)  
+    top                 150      302      ok (non-closed singly connected)  
+    wall1               505      1014     ok (non-closed singly connected)  
+    defaultFaces        40000    40852    ok (non-closed singly connected)  
+    ".*"                40850    40852    ok (closed singly connected)      
+
+
+Checking faceZone topology for multiply connected surfaces...
+    No faceZones found.
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking basic pointZone addressing...
+    No pointZones found.
+
+Checking geometry...
+    Overall domain bounding box (-0.015 0 0) (0.09 0.06 0.001)
+    Mesh has 2 geometric (non-empty/wedge) directions (1 1 0)
+    Mesh has 2 solution (non-empty) directions (1 1 0)
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-2.43172e-18 1.66488e-17 4.7992e-17) OK.
+    Max cell openness = 2.24868e-16 OK.
+    Max aspect ratio = 14.5204 OK.
+    Minimum face area = 1.73315e-08. Maximum face area = 4.12512e-06.  Face area magnitudes OK.
+    Min volume = 1.73315e-11. Max volume = 4.12512e-09.  Total volume = 5.65403e-06.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.4722 average: 19.9481
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.401302 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+End
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _fbf00d6b-20230626 OPENFOAM=2306 version=2306
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoCentralFoam
+Date   : Mar 15 2024
+Time   : 19:12:34
+Host   : cm017.hpc.nyu.edu
+PID    : 3283932
+I/O    : uncollated
+Case   : /scratch/chc675/22blockpar
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+[stack trace]
+=============
+#1  Foam::sigFpe::sigHandler(int) in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+#2  ? in /lib/x86_64-linux-gnu/libc.so.6
+#3  Foam::nutkWallFunctionFvPatchScalarField::calcNut() const in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#4  Foam::nutWallFunctionFvPatchScalarField::updateCoeffs() in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#5  ? in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#6  ? in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libcompressibleTurbulenceModels.so
+#7  ? in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libcompressibleTurbulenceModels.so
+#8  ? in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/lib/libcompressibleTurbulenceModels.so
+#9  ? in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/bin/rhoCentralFoam
+#10  ? in /lib/x86_64-linux-gnu/libc.so.6
+#11  __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+#12  ? in /usr/lib/openfoam/openfoam2306/platforms/linux64GccDPInt32Opt/bin/rhoCentralFoam
+=============
+/scratch/work/public/singularity/run-opencfd-openfoam-2306.bash: line 23: 3283923 Floating point exceptionsingularity exec ${nv} /scratch/work/public/singularity/opencfd-openfoam-2306.sif /bin/bash -c "
+unset -f which
+${run} ${args}
+"
